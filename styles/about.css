@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root
+{
+  --blue-color: #199ff8;
+  --dark-color: rgba(25, 25, 25, 1);
+  --dark-color-trans: rgba(25, 25, 25, 0.5);
+  --light-color: white;
+}
+.dark-theme
+{
+  --blue-color: #199ff8;
+  --dark-color: white;
+  --dark-color-trans: rgba(255, 255, 255, 0.5);
+  --light-color: rgba(25, 25, 25, 1);
+}
+*
+{
+    color: var(--dark-color);
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+}
+html, body
+{
+  background-color: var(--light-color);
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+#container p { display: inline }
+
+.cover
+{
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-color);
+  z-index: 10000;
+  position: absolute;
+}
+.mainmenu
+{
+  position: absolute;
+  display: inline-table;
+	width: 100%;
+  padding: 20px 10%;
+  box-sizing: border-box;
+	background-color: white;
+  box-shadow: 1px 1px 0px 0px rgba(200, 200, 200, 0.5);
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  font-weight: 600;
+  z-index: 10;
+}
+
+.menuelement1
+{
+
+}
+
+.menulink
+{
+  cursor: pointer;
+	box-sizing: border-box;
+	float: left;
+	margin-right: 75px;
+	text-decoration: none;
+	transition: text-decoration 300ms;
+  z-index: inherit;
+  opacity: 50;
+}
+.menulink_text {
+  display: inline-block;
+  position: relative;
+  color: var(--dark-color-trans);
+  margin: 0px;
+  z-index: inherit;
+  transition: 0.3s;
+}
+
+.menulink_text:hover {
+  color: var(--dark-color);
+}
+
+.menulink_active
+{
+  color: var(--dark-color);
+}
+
+
+/*.menulink:hover
+{
+	margin-right: 25px;
+	text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.25rem;
+    //border-bottom: 1px solid #000;
+    //padding-bottom: 3px;
+	color: black;
+	transition: .5s;
+}*/
+.menulink2
+{
+  color: var(--blue-color);
+	float: right;
+	margin-left: 75px;
+	text-decoration: none;
+	color: black;
+	transition: text-decoration 300ms;
+	cursor: pointer;
+  z-index: inherit;
+}
+
+.mainwrapper
+{
+  position: fixed;
+  top: calc(50% + 32.5px);
+  transform: translate(0, -50%);
+	width: 100%;
+  padding: 0px 10%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  z-index: 0;
+}
+
+#mainwrapper_2
+{
+  top: calc(150% + 32.5px);
+  transform: translate(0, -50%);
+}
+.hello
+{
+    font-size: 72px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.blinking {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+}
+
+.cv_button
+{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+
+}
+.cv_button_1
+{
+  padding: 16px 32px 16px 16px;
+  border-radius: 0 16px 16px 0;
+  text-align: center;
+  background-color: var(--blue-color);
+}
+
+.cv_button_2
+{
+  padding: 16px 16px 16px 32px;
+  background-color: var(--blue-color);
+
+  border-radius: 16px 0 0 16px;
+  text-align: center;
+  color: white;
+}
+
+.profilepicture
+{
+
+    //object-fit: contain;
+    //filter: invert(37%) sepia(78%) saturate(6175%) hue-rotate(182deg) brightness(103%) contrast(106%);
+}
+
+.profilepicture > img
+{
+    width: 100%;
+}
+
+.previouspointer
+{
+  position: absolute;
+  top: calc(65px + 65px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.previouspointer:hover
+{
+  box-shadow: 0px 10px 0px 0px var(--dark-color);
+
+}
+
+.nextpointer
+{
+  position: absolute;
+  top: calc(100% - 42.3px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.nextpointer:hover
+{
+  box-shadow: 0px -10px 0px 0px var(--dark-color);
+
+}
