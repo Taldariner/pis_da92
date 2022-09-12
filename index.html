@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <!--<link rel="stylesheet" href="scripts/pyscript.css" />
+    <script defer src="scripts/pyscript.js"></script>-->
+</head>
+<body>
+     <div class = "mainmenu">
+        <div class="menulink">
+            <p class="menulink_text"><a href="index.html">Home</a></p>
+        </div>
+
+        <div class="menulink2">
+           <i class='bx bx-moon' id="icon" height="32px"></i>
+
+       </div>
+         <div class="menulink2">
+            <p class="menulink_text">Gamedev
+        </div>
+         <div class="menulink2">
+            <p class="menulink_text">Web-dev
+        </div>
+        <div class="menulink2">
+           <p class="menulink_text">Skills
+       </div>
+        <div class="menulink2">
+           <p class="menulink_text"><a href="about.html">About</a>
+       </div>
+
+    </div>
+    <div class="mainwrapper">
+        <div class="hello">
+            <p>Hello,
+            <br>I'm <span style="color: #0087ca;">Taldarin</span>
+            <br><span id="message">&#8205;</span><!--A programmer<!<span class="blinking">_</span>-->
+            <!--<br><span style="font-size: 48px; margin-right: 48px;"><i class='bx bxl-instagram'></i></span>
+            <span style="font-size: 48px; margin-right: 48px;"><i class='bx bxl-linkedin' ></i></span>
+            <span style="font-size: 48px; margin-right: 48px;"><i class='bx bxl-github' ></i></span>-->
+          <!--<py-script> print("Hello, World!") </py-script-->
+          </p>
+        </div>
+        <div class="profilepicture">
+            <img src="assets/profile2.png">
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function()
+      {
+        document.body.classList.toggle("dark-theme");
+
+      }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <!--<link rel="stylesheet" href="scripts/pyscript.css" />
+    <script defer src="scripts/pyscript.js"></script>-->
+</head>
+<body>
+    <div class="cover"></div>
+     <div class = "mainmenu">
+        <div class="menulink">
+            <a href="index.html"><p class="menulink_text">Home</p></a>
+        </div>
+
+        <div class="menulink2">
+           <i class='bx bx-moon' id="icon" height="32px"></i>
+
+       </div>
+         <div class="menulink2">
+            <p class="menulink_text">Gamedev
+        </div>
+         <div class="menulink2">
+            <p class="menulink_text">Web-dev
+        </div>
+        <div class="menulink2">
+           <p class="menulink_text">Skills
+       </div>
+        <div class="menulink2">
+           <a href="about.html"><p class="menulink_text menulink_active">About</p></a>
+       </div>
+
+    </div>
+
+    <div class="previouspointer" id="previouspointer">
+      <p>
+    </div>
+
+    <div class="mainwrapper" id="mainwrapper_1">
+        <div class="hello">
+            About me
+        </div>
+        <div style="text-align: justify";>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br><span style="margin-right: 75px;"><i class='bx bxl-instagram' style="font-size: 48px; margin-top: 24px; margin-bottom: 24px;"></i></span>
+          <span style="margin-right: 75px;"><i class='bx bxl-linkedin' style="font-size: 48px;"></i></span>
+          <span><i class='bx bxl-github' style="font-size: 48px;"></i></span>
+        </div>
+        <div class="cv_button">
+        <div class="cv_button_2">
+          Download CV <!--<i class='bx bx-download' style="font-size: 32px; vertical-align: middle;"></i>-->
+        </div>
+        <div class="cv_button_1">
+        <i class='bx bxs-download' style="font-size: 32px; vertical-align: middle; color: var(--dark-color);"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainwrapper" id="mainwrapper_2">
+      <div class="hello">
+          And about this website
+      </div>
+      <div style="text-align: justify";>
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <br> <i class='bx bxs-file-html' height="48px" style="font-size: 48px;"></i>
+        <br> <i class='bx bxs-file-css' style="font-size: 48px;" ></i>
+        <br> <i class='bx bxs-file-js' style="font-size: 48px;" ></i>
+      </div>
+</div>
+
+    <div class="nextpointer" id="nextpointer">
+      <p>
+    </div>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/about.js"></script>
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function()
+      {
+        document.body.classList.toggle("dark-theme");
+
+      }
+    </script>
+
+</body>
+</html>
